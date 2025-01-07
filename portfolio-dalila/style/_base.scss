@@ -1,0 +1,71 @@
+@use "./variables";
+@use "./mixins";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("../public/images/image-base-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  margin-left: 18%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  @include mixins.title-style;
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Dancing Script";
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+ul.sidebar-links {
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    width: 10%;
+
+    li {
+        margin-bottom: 29px;
+
+        a {
+            font-family: "Dancing Script";
+            font-size: 17px;
+            font-weight: 100;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 8px 30px;
+            border-radius: 11px 11px 11px 11px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #f3e9e2;
+            transform: scale(1.1);
+        }
+    }
+}

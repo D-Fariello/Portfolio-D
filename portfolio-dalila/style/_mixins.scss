@@ -1,0 +1,21 @@
+@use './variables';
+
+// Mixin per i titoli
+@mixin title-style {
+    font-family: variables.$font-title;
+    font-weight: bold;
+}
+
+// Mixin per i paragrafi
+@mixin paragraph-style {
+    font-family: variables.$font-paragraph;
+    color: variables.$color-black;
+    line-height: 1.2;
+}
+
+// Mixin per il layout centrato
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
