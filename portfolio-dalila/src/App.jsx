@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "../style/main.scss";
 import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         {/* Page Content */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
         </Routes>
       </div>
     </Router>

@@ -7,8 +7,8 @@ body {
   width: 100%;
 }
 
-.home-body {
-  background-image: url("../public/images/image-base-2.jpg");
+.aboutme-body {
+  background-image: url("../public/images/aboutme-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,3 +74,26 @@ ul.sidebar-links {
     }
   }
 }
+
+h1.about-me-title {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 39%;
+
+    .about-me-paragraph{
+        font-family: variables.$font-paragraph;
+        font-size: 17px;
+    }
+}
+
+
