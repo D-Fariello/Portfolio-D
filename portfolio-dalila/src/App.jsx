@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
+import Experiences from "./pages/Experiences";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Experiences" element={<Experiences />} />
         </Routes>
       </div>
     </Router>
