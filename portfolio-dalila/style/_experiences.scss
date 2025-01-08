@@ -88,3 +88,97 @@ div#experience-page {
     }
 }
 
+.icon-skills {
+  margin-bottom: 2%;
+  font-size: 2em;
+  gap: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+// Icons' colors
+.html-icon-tooltip {
+  color: #f16529; 
+}
+
+.css-icon-tooltip {
+  color: #2965f1;
+}
+
+.js-icon-tooltip {
+  color: #f7df1e;
+}
+
+.reac-icon-tooltip {
+  color: #61dafb;
+}
+
+.iphone-icon-tooltip {
+  color: #1abc9c;
+}
+
+.redux-icon-tooltip {
+  color: #764abc;
+}
+
+.user-icon-tooltip {
+  color: #2c3e50;
+}
+
+.chart-icon-tooltip {
+  color: #27ae60;
+}
+
+.comments-icon-tooltip {
+  color: #3498db;
+}
+
+.licence-icon-tooltip {
+  color: #f1c40f;
+}
+
+.headset-icon-tooltip {
+  color: #bdc3c7;
+}
+
+.truck-icon-tooltip {
+  color: #8e44ad;
+}
+
+.chartpie-icon-tooltip {
+  color: #16a085;
+}
+
+.performance-icon-tooltip {
+  color: #e74c3c;
+}
+
+
+svg {
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+#redux-tooltip,
+  #html-tooltip,
+  #css-tooltip,
+  #js-tooltip,
+  #react-tooltip,
+  #responsive-tooltip,
+  #leadership-tooltip,
+  #process-tooltip,
+  #communication-tooltip,
+  #coaching-tooltip,
+  #service-tooltip,
+  #logistics-tooltip,
+  #analysis-tooltip,
+  #performance-tooltip {
+    font-size: 12px;
+    padding: 5px;
+    background-color: grey;
+    position: absolute;
+  }
+
