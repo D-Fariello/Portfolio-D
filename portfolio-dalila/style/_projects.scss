@@ -112,6 +112,7 @@ section#projects {
         text-align: center;
         width: 230px;
         height: 200px;
+        border-radius: 11px;
   
         &:hover {
           transform: scale(1.1);
@@ -123,6 +124,7 @@ section#projects {
           display: block;
           object-fit: cover;
           cursor: pointer;
+          border-radius: 11px;
         }
   
         .projects-paragraph {

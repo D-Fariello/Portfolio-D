@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../../style/_projects.scss";
+import "../../style/_modal.scss";
 import projectsData from "../data/projectsData";
-// import Modal from "../components/Modal";
+import Modal from "../components/Modal";
 
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All"); // Filter state
-  //   const [selectedProject, setSelectedProject] = useState(null);
-  //   const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -69,8 +70,8 @@ function Projects() {
           </div>
         ))}
       </div>
-      {/* Modal
-      <Modal show={showModal} onClose={closeModal} project={selectedProject} /> */}
+      {/* Modal */}
+      <Modal show={showModal} onClose={closeModal} project={selectedProject} />
     </section>
   );
 }
