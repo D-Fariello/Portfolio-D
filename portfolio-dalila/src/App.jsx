@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Experiences from "./pages/Experiences";
+import Projects from "./pages/Projects";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Experiences" element={<Experiences />} />
+          <Route path="/Projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
